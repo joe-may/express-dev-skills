@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   
+
+   <ul>
+    <% devskills.forEach(function(d, idx) { %>
+      <li>
+       <%= d.skills %>
+          - 
+        <%= d.done ? 'done' : 'not done' %>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/devskills/new">Add To Skill</a>
+  </body>
+</html>
+
+
